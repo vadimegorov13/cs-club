@@ -1,0 +1,7 @@
+/public
+/node_modules
+/api
+remix.config.js
+/.cache
+/.husky
+.eslintrc.js
