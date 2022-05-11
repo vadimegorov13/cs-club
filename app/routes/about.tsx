@@ -1,10 +1,8 @@
-import { Link, Outlet } from 'remix';
+import { Outlet } from 'remix';
 
 export default function About() {
   return (
     <div>
-      <header>
-      </header>
 
       <main>
         <div>

@@ -1,16 +1,9 @@
-import { Link, Outlet } from 'remix';
+import { Outlet } from 'remix';
 
 export default function Projects() {
   return (
     <div>
-      <header>
-      </header>
-      
-      <main>
-        <div>
-          <Outlet />
-        </div>
-      </main>
+      <Outlet />
     </div>
   );
 }

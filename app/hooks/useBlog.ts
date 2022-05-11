@@ -2,9 +2,10 @@ import { db } from '~/firebase/firebase.server';
 import { BlogData, CreateBlogData, useBlogType } from '~/utils/types';
 
 export const useBlog = (): useBlogType => {
+
   const createBlog = async (blog: CreateBlogData) => {
     try {
-      const newBlog = db.collection('blogs').doc();
+      const newBlog = db.collection('blogs').doc()
 
       await newBlog
         .set({
@@ -26,16 +27,14 @@ export const useBlog = (): useBlogType => {
   };
 
   const getBlogs = async () => {
-    console.log('Get Blogs');
     try {
       const blogs: BlogData[] = [];
 
       await db
         .collection('blogs')
-        .orderBy('createdAt')
         .get()
-        .then((querySnapShot) => {
-          querySnapShot.forEach((doc: any) => {
+        .then((res) => {
+          res.forEach((doc: any) => {
             // doc.data() is never undefined for query doc snapshots
             blogs.push(doc.data());
           });
@@ -48,7 +47,6 @@ export const useBlog = (): useBlogType => {
   };
 
   const getBlog = async (id: string) => {
-    console.log('Get 1 Blog');
     try {
       return await db
         .collection('blogs')
