@@ -1,5 +1,3 @@
-
-
 const darkBlue = {
   backgroundColor: '#233F61',
   fontFamily: 'Impact',

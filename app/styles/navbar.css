@@ -8,12 +8,12 @@ nav {
   color: hsl(0, 0%, 100%);
   padding: 1rem;
   font-family: Impact;
-  font-size: 1.5rem ;
+  font-size: 1.5rem;
   text-align: center;
-  height: 4.60rem;
+  height: 4.6rem;
 }
 
-.navbar ul{
+.navbar ul {
   display: block;
   margin: 0;
   padding: 0;
@@ -33,21 +33,22 @@ nav {
   display: block;
   width: 100%;
   height: 100%;
-  transition: color .2s cubic-bezier(0.55, 0, 0.55, 0.2), font-size .3s cubic-bezier(0.55, 0, 0.55, 0.2);
+  transition: color 0.2s cubic-bezier(0.55, 0, 0.55, 0.2),
+    font-size 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
 }
 
-.navbar ul li a:hover{
+.navbar ul li a:hover {
   color: hsl(53, 91%, 78%);
   font-size: 1.75rem;
 }
 
 #home-link a {
   font-size: 1.75rem;
-  color:hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   margin-right: 0.5rem;
 }
 
-#home-link a:hover{
+#home-link a:hover {
   color: hsl(53, 91%, 78%);
 }
 

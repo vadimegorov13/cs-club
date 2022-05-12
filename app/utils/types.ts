@@ -17,7 +17,6 @@ export type useBlogType = {
   getBlog: (id: string) => Promise<BlogData | undefined>;
 };
 
-
 export type CreateProjectData = {
   name: string;
   content: string;

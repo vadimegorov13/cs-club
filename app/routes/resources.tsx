@@ -1,7 +1,3 @@
 export default function Resources() {
-  return (
-    <div>
-      Resource stuff here
-    </div>
-  );
+  return <div>Resource stuff here</div>;
 }

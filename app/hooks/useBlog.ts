@@ -2,10 +2,9 @@ import { db } from '~/firebase/firebase.server';
 import { BlogData, CreateBlogData, useBlogType } from '~/utils/types';
 
 export const useBlog = (): useBlogType => {
-
   const createBlog = async (blog: CreateBlogData) => {
     try {
-      const newBlog = db.collection('blogs').doc()
+      const newBlog = db.collection('blogs').doc();
 
       await newBlog
         .set({
