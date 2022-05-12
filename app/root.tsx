@@ -1,3 +1,4 @@
+import type { LinksFunction, MetaFunction } from 'remix';
 import {
   Links,
   LiveReload,
@@ -6,13 +7,29 @@ import {
   Scripts,
   ScrollRestoration,
 } from 'remix';
-import type { MetaFunction } from 'remix';
-import Footer from './components/Footer';
-import Navbar from './components/Navbar';
+import globalStyles from '~/styles/global.css';
+import navbarStyles from '~/styles/navbar.css';
+import indexStyles from '~/styles/index.css';
+import Footer from './components/Layout/Footer';
+import Navbar from './components/Layout/Navbar';
 
-export const meta: MetaFunction = () => {
-  return { title: 'CS Club' };
+export const links: LinksFunction = () => {
+  return [
+    {
+      rel: 'stylesheet',
+      href: globalStyles,
+    },
+    {
+      rel: 'stylesheet',
+      href: navbarStyles,
+    },
+    {
+      rel: 'stylesheet',
+      href: indexStyles,
+    },
+  ];
 };
+
 
 export default function App() {
   return (
@@ -20,13 +37,6 @@ export default function App() {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-          crossOrigin="anonymous"
-        ></link>
         <Meta />
         <Links />
       </head>
@@ -34,16 +44,20 @@ export default function App() {
       <body>
         <Navbar />
 
-        <main className="container-fluid border">
+        <main>
           <Outlet />
-
-          <Footer />
 
           <ScrollRestoration />
           <Scripts />
           {process.env.NODE_ENV === 'development' && <LiveReload />}
         </main>
+
+        <Footer />
       </body>
     </html>
   );
 }
+
+export const meta: MetaFunction = () => {
+  return { title: 'CS Club' };
+};

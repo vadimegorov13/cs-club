@@ -51,7 +51,7 @@ export default function Index() {
     <div>
       {/* Logo row*/}
       <div className="row" style={lightBlue}>
-        <div className="darkBlue">
+        <div className="dark-blue">
           <img
             src="blueClubLogo.png"
             className="img-fluid my-3"
