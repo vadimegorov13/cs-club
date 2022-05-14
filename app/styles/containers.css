@@ -1,0 +1,11 @@
+.lightBlueContainer  {
+    background-color: #CAD5DD;
+    font-family: Impact;
+    color: white;
+    text-align: center; 
+    line-height: 1.2, /*TODO: this isn't working so fix it*/
+}
+
+.dark-blue {
+  background-color: #233F61;
+}

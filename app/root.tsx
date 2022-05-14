@@ -9,7 +9,7 @@ import {
 } from 'remix';
 import globalStyles from '~/styles/global.css';
 import navbarStyles from '~/styles/navbar.css';
-import indexStyles from '~/styles/index.css';
+import containerStyles from '~/styles/containers.css';
 import Footer from './components/Layout/Footer';
 import Navbar from './components/Layout/Navbar';
 
@@ -25,8 +25,8 @@ export const links: LinksFunction = () => {
     },
     {
       rel: 'stylesheet',
-      href: indexStyles,
-    },
+      href: containerStyles,
+    }
   ];
 };
 
