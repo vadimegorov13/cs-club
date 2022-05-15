@@ -1,46 +1,6 @@
-//Home page
-import  { LinksFunction, Links} from 'remix';
+//  Home page
+import { Links } from 'remix';
 
-
-// const dark-blue = {
-//   backgroundColor: "#233F61",
-//   fontFamily:"Impact",
-//   fontSize: 25,
-//   color: 'white'
-// };
-
-/*const lightBlueContainer = {
-  backgroundColor: '#CAD5DD',
-  fontFamily: 'Impact',
-  color: 'white',
-  textAlign: 'center' as const, // Had to declare it like this or would get error
-  lineHeight: '3rem',
-}; */
-
-const yellow = {
-  backgroundColor: '#FEE190',
-  fontFamily: 'Impact',
-  fontSize: 30,
-  color: '#FEE190',
-  textAlign: 'center' as const, // Had to declare it like this or would get error
-};
-
-const whiteWithDarkText = {
-  backgroundColor: 'white',
-  fontFamily: 'Helvetica Neue',
-  fontSize: 25, 
-  color: '#233F61',
-  textAlign: 'right' as const, // Had to declare it like this or would get error
-};
-
-const whiteWithLightText = {
-  backgroundColor: 'white',
-  fontFamily: 'Impact',
-  fontSize: 80,
-  color: '#CAD5DD',
-  textAlign: 'left' as const, // Had to declare it like this or would get error
-  lineHeight: '5rem',
-};
 
 export default function Index() {
   return (
@@ -50,8 +10,8 @@ export default function Index() {
       </head>
       <div>
         {/* Logo row*/}
-        <div className="row lightBlueContainer">
-          <div className="dark-blue">
+        <div className="row light-blue-container">
+          <div className="dark-blue-container">
             <img
               src="blueClubLogo.png"
               className="img-fluid my-3"
@@ -77,7 +37,7 @@ export default function Index() {
         </div>
 
         {/* Club summary row*/}
-        <div className="row my-3" style={whiteWithDarkText}>
+        <div className="row my-3 white-container-with-dark-text">
           <div className="col-lg-6 my-auto">
             <p>
               The <strong>Computer Science Club at UAA </strong>
@@ -101,7 +61,7 @@ export default function Index() {
         </div>
 
         {/* Club stats row*/}
-        <div className="row" style={yellow}>
+        <div className="row yellow-container">
           <div className="card mx-auto my-5" style={{ width: '18rem' }}>
             <div className="card-body">
               <h5 className="card-title " style={{ fontSize: 80 }}>
@@ -131,7 +91,7 @@ export default function Index() {
         </div>
 
         {/* Club spotlight row*/}
-        <div className="row m-4" style={whiteWithLightText}>
+        <div className="row m-4 white-container-with-light-text ">
           <div className="col-md-4 mt-auto">
             <p>
               Club <br />

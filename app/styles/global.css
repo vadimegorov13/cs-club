@@ -5,8 +5,11 @@
   /* --color-primary: hsl(230, 100%, 50%); */
 
   /* Fonts */
+  
+  /*  TODO: delete this part?
   --font-body: -apple-system, 'Segoe UI', Helvetica Neue, Helvetica, Roboto,
     Arial, sans-serif, system-ui, 'Apple Color Emoji', 'Segoe UI Emoji';
+    */
 }
 
 html {
@@ -28,6 +31,8 @@ body {
 }
 
 body {
-  font-family: var(--font-body);
+  /*  TODO: Delete this part?
+  font-family: var(--font-body);  
+  */
   line-height: 1.5;
 }

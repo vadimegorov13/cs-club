@@ -13,7 +13,7 @@ export default function Events() {
       <header></header>
       <main>
         <div>
-          <div style={header}> Upcoming Events</div>
+          <div className="blue-header-container"> Upcoming Events</div>
           <Outlet />
         </div>
       </main>

@@ -26,7 +26,7 @@ export const links: LinksFunction = () => {
     {
       rel: 'stylesheet',
       href: containerStyles,
-    }
+    },
   ];
 };
 
