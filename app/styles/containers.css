@@ -1,8 +1,7 @@
-
 .blue-header-container {
   font-family: Impact;
   font-size: 2rem;
-  color: #233F61;
+  color: #233f61;
   text-align: left;
 }
 
@@ -11,35 +10,35 @@
   font-family: Impact;
   color: white;
   text-align: center;
-  line-height: 1.2; /*TODO: this isn't working so fix it*/
+  line-height: 1.2;
 }
 
 .dark-blue-container {
   background-color: #233f61;
   font-size: 25;
-  color: white
+  color: white;
 }
 
 .yellow-container {
-  background-color: #FEE190;
+  background-color: #fee190;
   font-size: 30;
-  color: #FEE190;
+  color: #fee190;
   text-align: center;
 }
 
-.white-container-with-dark-text  {
+.white-container-with-dark-text {
   background-color: white;
-  font-family: "Helvetica Neue";
+  font-family: 'Helvetica Neue';
   font-size: 25;
-  color: #233F61;
-  text-align: right; 
+  color: #233f61;
+  text-align: right;
 }
 
 .white-container-with-light-text {
   background-color: 'white';
   font-family: Impact;
   font-size: 4rem;
-  color: #CAD5DD;
+  color: #cad5dd;
   text-align: left;
   line-height: 5rem;
-};
+}
