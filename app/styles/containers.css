@@ -10,7 +10,7 @@
   font-family: Impact;
   color: white;
   text-align: center;
-  line-height: 1.2; /*TODO: this isn't working so fix it*/
+  line-height: 1.2;
 }
 
 .dark-blue-container {

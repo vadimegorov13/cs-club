@@ -29,10 +29,3 @@ body {
   background-color: var(--color-background);
   color: var(--color-foreground);
 }
-
-body {
-  /*  TODO: Delete this part?
-  font-family: var(--font-body);  
-  */
-  line-height: 1.5;
-}
