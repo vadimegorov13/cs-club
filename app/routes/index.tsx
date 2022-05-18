@@ -1,7 +1,6 @@
 //  Home page
 import { Links } from 'remix';
 
-
 export default function Index() {
   return (
     <html lang="en">
