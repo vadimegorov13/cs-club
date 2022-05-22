@@ -1,10 +1,8 @@
 import { ActionFunction, Link } from 'remix';
 import { redirect } from 'remix';
-import { useBlog } from '~/hooks/useBlog';
+import { createBlog } from '~/hooks/useBlog';
 
 export const action: ActionFunction = async ({ request }) => {
-  const { createBlog } = useBlog();
-
   const form = await request.formData();
   const name = form.get('name');
   const content = form.get('content');
@@ -14,8 +12,8 @@ export const action: ActionFunction = async ({ request }) => {
     throw new Error(`Form not submitted correctly.`);
   }
 
-  const blog = await createBlog({ name, content });
-  return redirect(`/blogs/${blog.id}`);
+  const blogId = await createBlog({ name, content });
+  return redirect(`/blogs/${blogId}`);
 };
 
 export default function NewBlog() {

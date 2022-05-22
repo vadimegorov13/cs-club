@@ -11,12 +11,6 @@ export type BlogData = {
   updatedAt: number;
 };
 
-export type useBlogType = {
-  createBlog: ({ name, content }: CreateBlogData) => Promise<any>;
-  getBlogs: () => Promise<BlogData[] | undefined>;
-  getBlog: (id: string) => Promise<BlogData | undefined>;
-};
-
 export type CreateProjectData = {
   name: string;
   content: string;

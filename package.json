@@ -6,7 +6,6 @@
   "scripts": {
     "build": "remix build",
     "dev": "node -r dotenv/config ./node_modules/@remix-run/dev/cli.js",
-    "dev2": "remix dev",
     "postinstall": "remix setup node",
     "prepare": "husky install",
     "check-types": "tsc --pretty --noEmit",

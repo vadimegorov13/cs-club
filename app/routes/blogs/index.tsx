@@ -1,9 +1,8 @@
 import { Link, LoaderFunction, useLoaderData } from 'remix';
-import { useBlog } from '~/hooks/useBlog';
+import { getBlogs } from '~/hooks/useBlog';
 import { BlogData } from '~/utils/types';
 
 export const loader: LoaderFunction = async () => {
-  const { getBlogs } = useBlog();
   const data: BlogData[] | undefined = await getBlogs();
 
   return data;

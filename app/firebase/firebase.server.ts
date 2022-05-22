@@ -12,10 +12,9 @@ if (!firebase.apps.length) {
 const app = firebase.app();
 // const auth = firebase.auth();
 const db = firebase.firestore();
-const storage = firebase.storage();
 
 // return firebase components
-export { db, storage, app };
+export { db };
 
 console.log(
   app.name

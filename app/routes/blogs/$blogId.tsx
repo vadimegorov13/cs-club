@@ -1,11 +1,9 @@
 /* eslint-disable require-jsdoc */
 import { Link, useLoaderData, LoaderFunction } from 'remix';
-import { useBlog } from '~/hooks/useBlog';
+import { getBlog } from '~/hooks/useBlog';
 import { BlogData } from '~/utils/types';
 
 export const loader: LoaderFunction = async ({ params }) => {
-  const { getBlog } = useBlog();
-
   const blog = await getBlog(params.blogId!);
 
   if (!blog) throw new Error('Blog not found');
