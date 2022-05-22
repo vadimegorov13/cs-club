@@ -6,7 +6,7 @@ import { BlogData } from '~/utils/types';
 export const loader: LoaderFunction = async ({ params }) => {
   const blog = await getBlog(params.blogId!);
 
-  if (!blog) throw new Error('Blog not found');
+  if (!blog) throw new Error('Blog does not exist');
 
   return blog;
 };

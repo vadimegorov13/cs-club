@@ -32,6 +32,14 @@ export const links: LinksFunction = () => {
 
 export default function App() {
   return (
+    <Document>
+      <Outlet />
+    </Document>
+  );
+}
+
+const Document = ({ children }: { children: React.ReactNode }) => {
+  return (
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
@@ -48,7 +56,7 @@ export default function App() {
         <Navbar />
 
         <main>
-          <Outlet />
+          {children}
 
           <ScrollRestoration />
           <Scripts />
@@ -59,7 +67,18 @@ export default function App() {
       </body>
     </html>
   );
-}
+};
+
+export const ErrorBoundary = ({ error }: { error: Error }) => {
+  return (
+    <Document>
+      <div className="error-container">
+        <h1>App Error</h1>
+        <pre>{error.message}</pre>
+      </div>
+    </Document>
+  );
+};
 
 export const meta: MetaFunction = () => {
   return { title: 'CS Club' };
